@@ -1,0 +1,463 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Poppins:wght@500&family=Ubuntu:wght@300;400&display=swap');
+
+ * {
+     margin: 0px 0px;
+     padding: 0px 0px;
+     box-sizing: border-box;
+     font-family: poppins;
+     color: white;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     height: 100vh;
+     background-color: black;
+
+ }
+
+ .maincontainer {
+     margin: 0 55px;
+ }
+
+ .container {
+     background: url("images/background.png");
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 100vh;
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+ }
+
+ .navbar ul {
+     display: flex;
+ }
+
+ .navbar ul li {
+     list-style: none;
+     padding: 20px 40px;
+     font-size: 19px;
+ }
+
+ .navbar ul li a::after {
+     content: "";
+     width: 0;
+     height: 3px;
+     background: red;
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     transition: 0.5s;
+ }
+
+ .navbar ul li a:hover::after {
+     width: 100%;
+ }
+
+ .navbar ul li a {
+     color: white;
+     text-decoration: none;
+     position: relative;
+ }
+
+ #home1 {
+     color: red;
+ }
+
+ .logo {
+     padding: 20px 40px;
+     font-size: 30px;
+     font-weight: bolder;
+     margin-top: 5px;
+ }
+
+ .mainleft {
+     width: 40vw;
+     margin-top: 25vh;
+     margin-left: 55px;
+ }
+
+ .mainleft h1 {
+     color: white;
+     font-size: 40px;
+ }
+
+ .mainleft h3 span{
+     color: red;
+     font-size: 25px;
+ }
+
+ .desc {
+     margin: 15px 0;
+     color: white;
+     font-weight: lighter;
+ }
+
+ .hire {
+     padding: 8px 18px;
+     border-radius: 7px;
+     border: none;
+     color: rgb(0, 0, 0);
+     background-color: red;
+     border: 1px solid red;
+     font-weight: bolder;
+     cursor: pointer;
+     transition: all 0.3s;
+ }
+.hire:hover{
+    color: red;
+    background-color: transparent;
+}
+ .talk {
+     padding: 8px 18px;
+     border-radius: 7px;
+     border: 1px solid red;
+     color: red;
+     background-color: transparent;
+     margin-left: 20px;
+     font-weight: bolder;
+     cursor: pointer;
+     transition: all 0.3s;
+ }
+.talk:hover{
+     color: rgb(0, 0, 0);
+     background-color: red;
+}
+ #about {
+     margin-left: 20px;
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-around;
+     padding: 80px 0;
+ }
+
+ .abtleft {
+     flex-basis: 35%;
+     margin-right: 60px;
+ }
+
+ .abtleftimg {
+     width: 100%;
+     border-radius: 20px;
+ }
+
+ .abtright {
+     flex-basis: 50%;
+ }
+
+ .maintabinfo {
+     color: white;
+     margin-top: 30px;
+ }
+
+ .maintabhead {
+     font-size: 50px;
+ }
+
+ .tabtitles {
+     display: flex;
+     color: white;
+     margin-top: 30px;
+ }
+
+ .tablink {
+     margin-right: 50px;
+     cursor: pointer;
+     font-weight: bolder;
+     position: relative;
+     font-size: 18px;
+ }
+
+ .tablink::after {
+     content: "";
+     width: 0;
+     height: 3px;
+     background: red;
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     transition: 0.5s;
+ }
+
+ .tablink.activelink::after {
+     width: 50%;
+ }
+
+ .maintabinfo2 {
+     position: relative;
+ }
+
+ #experience {
+     position: absolute;
+     bottom: -80px;
+ }
+
+ #education {
+     position: absolute;
+     bottom: -15px;
+ }
+
+ .tabinfo {
+     margin-top: 50px;
+     scale: 0;
+     transition: all 0.5s;
+ }
+
+ .tabinfo ul {
+     list-style: none;
+ }
+
+ .tabinfo ul li span {
+     color: red;
+     font-weight: lighter;
+ }
+
+ .tabinfo ul li {
+     margin-bottom: 15px;
+ }
+
+ .tabinfo.activetab {
+     scale: 1;
+ }
+
+ #services {
+     margin-top: 20px;
+     margin-left: 60px;
+ }
+
+ .cardcontainer {
+     margin-top: 40px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .card {
+     margin-right: 30px;
+     padding: 40px;
+     background-color: rgb(34, 33, 33);
+     border-radius: 10px;
+     transition: all 0.5s;
+ }
+
+ .card i {
+     font-size: 55px;
+     margin-bottom: 25px;
+ }
+
+ .card h3 {
+     font-size: 30px;
+ }
+
+ .card p {
+     font-weight: lighter;
+     margin: 10px 0;
+ }
+
+ .card a {
+     text-decoration: none;
+ }
+
+ .card:hover {
+     transform: translateY(-12px);
+     background-color: red;
+ }
+
+ #work {
+     margin-top: 100px;
+     margin-left: 60px;
+ }
+
+ .card2 img {
+     height: 450px;
+     width: 350px;
+     border-radius: 10px;
+     transition: all 0.5s;
+ }
+
+ .card2container {
+     margin-top: 40px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .card2 .layer p {
+     width: 300px;
+     margin-top: 18px;
+     margin-bottom: 14px;
+ }
+
+ .card2 {
+     text-align: center;
+     position: relative;
+
+ }
+
+ .card2 .layer h3 {
+     font-weight: bolder;
+ }
+
+ .card2 .layer i {
+     border-radius: 40px;
+     background-color: white;
+     color: red;
+     padding: 13px;
+     cursor: pointer;
+ }
+
+ .card2 .layer {
+     position: absolute;
+     bottom: 130px;
+     left: 25px;
+     scale: 0;
+ }
+
+ .card2:hover img {
+     filter:
+         grayscale(1) brightness(0.4);
+ }
+
+ .card2:hover .layer {
+     opacity: 1;
+     scale: 1;
+ }
+
+ .seemore {
+     color: white;
+     background-color: black;
+     border: 2px solid rgb(107, 0, 0);
+     border-radius: 8px;
+     padding: 10px 20px;
+     margin-top: 30px;
+     transition: all 0.3s;
+     cursor: pointer;
+ }
+
+ .seemore:hover {
+     background-color: rgb(247, 71, 71);
+ }
+
+ .card2maincont {
+     text-align: center;
+ }
+
+ #contact {
+     margin-top: 80px;
+     margin-left: 65px;
+ }
+
+ .contacttop {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .contactinfo {
+     flex-basis: 40%;
+ }
+
+ .email {
+     display: flex;
+ }
+
+ .phone {
+     display: flex;
+ }
+
+ .input {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     padding: 13px 115px;
+ }
+
+ .input input {
+     margin-bottom: 25px;
+     padding: 10px;
+     background-color: rgb(48, 48, 48);
+     border: none;
+     border-radius: 5px;
+ }
+
+ .input textarea {
+     padding: 10px;
+     background-color: rgb(48, 48, 48);
+     border: none;
+     border-radius: 5px;
+ }
+
+ .contactinfo h1 {
+     margin-bottom: 20px;
+ }
+
+ .contactinfo .email {
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .contactinfo .email i {
+     margin-right: 12px;
+     color: red;
+ }
+
+ .contactinfo .phone i {
+     margin-right: 12px;
+     color: red;
+ }
+
+ .contactinfo .phone {
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .contactinfo .icons {
+     margin-bottom: 20px;
+ }
+
+ .contactinfo .icons i {
+     font-size: 25px;
+     margin-right: 6px;
+     color: grey;
+     cursor: pointer;
+     transition: all 0.3s;
+ }
+
+ .contactinfo button {
+     color: white;
+     background-color: red;
+     padding: 10px 20px;
+     border-radius: 7px;
+     cursor: pointer;
+ }
+
+ .contactinfo .icons i:hover {
+     color: red;
+ }
+
+ .contactbottom button {
+     color: white;
+     background-color: red;
+     padding: 10px 20px;
+     width: 120px;
+     border-radius: 7px;
+     margin-top: 20px;
+     cursor: pointer;
+ }
+
+ .contactbottom {
+     text-align: center;
+ }
+
+ .footer {
+     padding: 9px;
+     text-align: center;
+     background-color: rgb(39, 39, 39);
+     margin-top: 20px;
+ }
